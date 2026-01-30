@@ -1,0 +1,46 @@
+{
+  "etudiant": {
+    "nom": "Jean Dupont",
+    "annee": "1re année",
+    "prepa": "MPSI",
+    "etablissement": "Lycée Exemple, Lyon"
+  },
+  "progressionGlobale": 72,
+  "matieres": [
+    {
+      "nom": "Mathématiques",
+      "progression": 80,
+      "moyenne": 14.5,
+      "objectif": 15,
+      "commentaire": "Bon niveau, poursuivre l'entraînement sur les problèmes ouverts."
+    },
+    {
+      "nom": "Physique",
+      "progression": 65,
+      "moyenne": 12,
+      "objectif": 13,
+      "commentaire": "Renforcer la maîtrise des bases et travailler la rédaction."
+    },
+    {
+      "nom": "Informatique",
+      "progression": 70,
+      "moyenne": 13.5,
+      "objectif": 15,
+      "commentaire": "Bonne progression, approfondir les notions d'algorithmique."
+    },
+    {
+      "nom": "Sciences de l'ingénieur",
+      "progression": 60,
+      "moyenne": 11.5,
+      "objectif": 13,
+      "commentaire": "Participation active attendue en travaux dirigés."
+    },
+    {
+      "nom": "Anglais",
+      "progression": 75,
+      "moyenne": 14,
+      "objectif": 14,
+      "commentaire": "Niveau satisfaisant, maintenir l'exposition à l'oral."
+    }
+  ]
+}

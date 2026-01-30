@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi de progression – Prépa Ingénieur</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Optionnel : Bootstrap via CDN pour un style rapide -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+  <style>
+    body {
+      background-color: #f5f7fb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #1f2933;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 1.5rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .student-card {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 8px rgba(15, 23, 42, 0.08);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #0d47a1;
+    }
+
+    .progress-section {
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 4px 8px rgba(15, 23, 42, 0.08);
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Suivi de progression – Prépa Ingénieur</h1>
+      <p class="mb-0">Tableau de bord individuel de l'étudiant</p>
+    </div>
+  </header>
+
+  <main class="container mb-4">
+    <!-- Informations étudiant -->
+    <section class="student-card">
+      <div class="section-title">Informations étudiant</div>
+      <div class="row">
+        <div class="col-md-6 mb-2">
+          <strong>Nom :</strong> Jean Dupont
+        </div>
+        <div class="col-md-6 mb-2">
+          <strong>Année :</strong> 1<sup>re</sup> année
+        </div>
+        <div class="col-md-6 mb-2">
+          <strong>Prépa :</strong> MPSI
+        </div>
+        <div class="col-md-6 mb-2">
+          <strong>Établissement :</strong> Lycée Exemple, Lyon
+        </div>
+      </div>
+    </section>
+
+    <!-- Progression globale -->
+    <section class="progress-section">
+      <div class="section-title">Progression globale</div>
+      <p class="mb-2">
+        Estimation de la progression annuelle de l'étudiant sur l'ensemble des compétences travaillées.
+      </p>
+      <div class="progress-label">
+        <span>Avancement global</span>
+        <span>72 %</span>
+      </div>
+      <div class="progress" style="height: 1.25rem;">
+        <div
+          class="progress-bar bg-primary"
+          role="progressbar"
+          style="width: 72%;"
+          aria-valuenow="72"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          72 %
+        </div>
+      </div>
+    </section>
+
+    <!-- Progression par matière -->
+    <section class="progress-section">
+      <div class="section-title">Progression par matière</div>
+
+      <div class="mb-3">
+        <div class="progress-label">
+          <span>Mathématiques</span>
+          <span>80 %</span>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 80%;"
+            aria-valuenow="80"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="progress-label">
+          <span>Physique</span>
+          <span>65 %</span>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar bg-info"
+            role="progressbar"
+            style="width: 65%;"
+            aria-valuenow="65"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="progress-label">
+          <span>Informatique</span>
+          <span>70 %</span>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning"
+            role="progressbar"
+            style="width: 70%;"
+            aria-valuenow="70"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <div class="progress-label">
+          <span>Sciences de l'ingénieur</span>
+          <span>60 %</span>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar bg-secondary"
+            role="progressbar"
+            style="width: 60%;"
+            aria-valuenow="60"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+
+      <div class="mb-1">
+        <div class="progress-label">
+          <span>Anglais</span>
+          <span>75 %</span>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar bg-danger"
+            role="progressbar"
+            style="width: 75%;"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau récapitulatif -->
+    <section class="progress-section">
+      <div class="section-title">Moyennes et objectifs</div>
+      <div class="table-responsive">
+        <table class="table table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Matière</th>
+              <th>Moyenne actuelle (/20)</th>
+              <th>Objectif visé (/20)</th>
+              <th>Commentaire du professeur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mathématiques</td>
+              <td>14,5</td>
+              <td>15</td>
+              <td>Bon niveau, poursuivre l'entraînement sur les problèmes ouverts.</td>
+            </tr>
+            <tr>
+              <td>Physique</td>
+              <td>12</td>
+              <td>13</td>
+              <td>Renforcer la maîtrise des bases et travailler la rédaction.</td>
+            </tr>
+            <tr>
+              <td>Informatique</td>
+              <td>13,5</td>
+              <td>15</td>
+              <td>Bonne progression, approfondir les notions d'algorithmique.</td>
+            </tr>
+            <tr>
+              <td>Sciences de l'ingénieur</td>
+              <td>11,5</td>
+              <td>13</td>
+              <td>Participation active attendue en travaux dirigés.</td>
+            </tr>
+            <tr>
+              <td>Anglais</td>
+              <td>14</td>
+              <td>14</td>
+              <td>Niveau satisfaisant, maintenir l'exposition à l'oral.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Bouton de mise à jour (sans backend) -->
+    <section class="text-end">
+      <button type="button" class="btn btn-primary">
+        Mettre à jour
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>Prototype de suivi de progression – Prépa ingénieur. Données affichées à titre d'exemple.</span>
+    </div>
+  </footer>
+
+  <!-- Optionnel : JS Bootstrap si besoin de composants interactifs -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
